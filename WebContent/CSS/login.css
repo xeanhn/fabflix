@@ -1,0 +1,82 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Rubik";
+    font-size: 22px;
+}
+
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+
+}
+
+.leftBlock{
+    background-color: #474D59;
+    width: 60vw;
+    height: 95vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightBlock{
+    text-align: center;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.movieIcons{
+    max-height: 60vh;
+}
+
+.loginTextBox{
+    background: rgba(128, 140, 166, 0.3);
+    border-radius: 10px;
+    border: none;
+    font-size: 22px;
+    height: 50px;
+    width: 300px;
+    padding-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.loginBtn{
+    background: #B6CAF2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: none;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 40px;
+    width: 200px;
+}
+
+.footerFlex{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.footer{
+    background-color: #D9DDE4;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login_error_message{
+    margin-top: 10px;
+    color: #DA4442;
+}
+

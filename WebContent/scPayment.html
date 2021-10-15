@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/shoppingCart.css">
+</head>
+<body>
+
+<a href="index.html" class="backBtn">< Back to Home</a>
+<span class="backdrop"></span>
+<div class="flexBoxOuter">
+    <div class="header">
+
+        <h1 class="title">Payment Page</h1>
+
+    </div>
+
+
+    <div class="receiptBox">
+        <div class="receiptTitle">Payment</div>
+        <div class="totalAmount">Total: <span id="amt"></span></div>
+        <form id="paymentForm" method="post" action ="#">
+            <div class="paymentRow">
+                <div class="inputBox">
+                    <label for="firstName">First Name</label>
+                    <input id="firstName" type="text" placeholder="" name="firstName">
+                </div>
+
+                <div class="inputBox">
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" type="text" placeholder="" name="lastName">
+                </div>
+            </div>
+
+            <div class="paymentRow">
+                <div class="inputBox">
+                    <label for="cardNum">Credit Card Number</label>
+                    <input id="cardNum" type="text" placeholder="" name="cardNum">
+                </div>
+
+                <div class="inputBox">
+                    <label for="expDate">Exp. Date</label>
+                    <input id="expDate" type="text" placeholder="" name="expDate">
+                </div>
+            </div>
+
+            <br>
+            <input id="submitBtn" type="submit" value="Place Order">
+        </form>
+        <div id="payment_error_message"></div>
+    </div>
+    <div class="back">
+        <a href="scCart.html" class="">< Back to Summary</a>
+    </div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="scPayment.js"></script>
+
+</body>
+</html>

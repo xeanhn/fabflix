@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Movie List Page</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/movie-list-page.css">
+</head>
+<body>
+
+<div class="rightAlign">
+    <div class="flexCart">
+        <a href="_dashboard.html" class="checkout" id="dbBtn">
+            <img class="dbImg btnImg" src="imgs/database.svg" alt="">
+        </a>
+        <a href="scCart.html" class="checkout" id = "scBtn">
+            <img class="cartImg btnImg" src="imgs/cart.png" alt="">
+        </a>
+    </div>
+</div>
+
+
+<span class="underlay"></span>
+<h1 class="title">Movie List Page</h1>
+
+<div class="sortOptions">
+    <label for="sortOptions">Select amount of results per page: </label>
+    <select name="sortOptions" id="sortOptions">
+        <option value="10">10</option>
+        <option value="25">25</option>
+        <option value="50">50</option>
+        <option value="100">100</option>
+    </select>
+    <br>
+    <label for="sort">Select sorting method: </label>
+    <select name="sort" id="sort">
+        <option value="null">None</option>
+        <option value="title-asc-rating-asc">Title Ascending, Rating Ascending</option>
+        <option value="title-asc-rating-desc">Title Ascending, Rating Descending</option>
+        <option value="title-desc-rating-asc">Title Descending, Rating Ascending</option>
+        <option value="title-desc-rating-desc">Title Descending, Rating Descending</option>
+        <option value="rating-asc-title-asc">Rating Ascending, Title Ascending</option>
+        <option value="rating-asc-title-desc">Rating Ascending, Title Descending</option>
+        <option value="rating-desc-title-asc">Rating Descending, Title Ascending</option>
+        <option value="rating-desc-title-desc">Rating Descending, Title Descending</option>
+    </select>
+</div>
+
+<div class="searchBox">
+    <div class="browseBlock">
+        <div class="browseTitle"><b>Browse by Genre</b></div>
+        <div id="genreList">
+
+        </div>
+    </div>
+
+    <div class="browseBlock">
+        <div class="browseTitle"><b>Browse by Title</b></div>
+
+        <a href="index.html?char=A">A</a>
+        <a href="index.html?char=B">B</a>
+        <a href="index.html?char=C">C</a>
+        <a href="index.html?char=D">D</a>
+        <a href="index.html?char=E">E</a>
+        <a href="index.html?char=F">F</a>
+        <a href="index.html?char=G">G</a>
+        <a href="index.html?char=H">H</a>
+        <a href="index.html?char=I">I</a>
+        <a href="index.html?char=J">J</a>
+        <a href="index.html?char=K">K</a>
+        <a href="index.html?char=L">L</a>
+        <a href="index.html?char=M">M</a>
+        <a href="index.html?char=N">N</a>
+        <a href="index.html?char=P">P</a>
+        <a href="index.html?char=O">O</a>
+        <a href="index.html?char=Q">Q</a>
+        <a href="index.html?char=R">R</a>
+        <a href="index.html?char=S">S</a>
+        <a href="index.html?char=T">T</a>
+        <a href="index.html?char=U">U</a>
+        <a href="index.html?char=V">V</a>
+        <a href="index.html?char=W">W</a>
+        <a href="index.html?char=X">X</a>
+        <a href="index.html?char=Y">Y</a>
+        <a href="index.html?char=Z">Z</a>
+        <br>
+        <a href="index.html?char=1">1</a>
+        <a href="index.html?char=2">2</a>
+        <a href="index.html?char=3">3</a>
+        <a href="index.html?char=4">4</a>
+        <a href="index.html?char=5">5</a>
+        <a href="index.html?char=6">6</a>
+        <a href="index.html?char=7">7</a>
+        <a href="index.html?char=8">8</a>
+        <a href="index.html?char=9">9</a>
+        <a href="index.html?char=0">0</a>
+        <a href="index.html?char=*">*</a>
+    </div>
+
+
+    <form class="searchBars" id="searchForm">
+        <input id="title" type="text" placeholder="Title" name="title">
+        <input id="year" type="text" placeholder="Year" name="year">
+        <input id="director" type="text" placeholder="Director" name="director">
+        <input id="star" type="text" placeholder="Star" name="star">
+        <br>
+        <input class="submitBtn" type="submit" value="Submit">
+    </form>
+
+    <br>
+
+    <form class="searchBars" id="ftsForm">
+        <input id="ftsTitle" type="text" placeholder="Full Text Search Title" name="ftstitle" class="autocomplete-searchbox form-control">
+        <br>
+        <input class="submitBtn" type="submit" value="Submit">
+    </form>
+</div>
+
+<div id="boxes">
+
+</div>
+
+<span class="pageNavBtns">
+    <button id="prevBtn">Prev</button>
+    <button id="nextBtn">Next</button>
+</span>
+
+<!--</div>-->
+<!-- Load jQuery and Bootstrap JS and autocomplete -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.devbridge-autocomplete/1.4.7/jquery.autocomplete.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+<script src="index.js"></script>
+</body>
+</html>

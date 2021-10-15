@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee Dashboard</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/dashboard.css">
+</head>
+<body>
+
+
+<h1 class="pageTitle">Employee Dashboard</h1>
+<h2>Add Star</h2>
+<form id="add_star" method="get" action="#">
+    <label for="starName">Star Name:</label>
+    <input type="text" name="starName" id="starName">
+    <br>
+    <label for="starDOB">Birth Year (Optional):</label>
+    <input type="text" name="starDOB" id="starDOB">
+    <br>
+    <button type="submit">Submit</button>
+</form>
+
+<h2>Add Movie</h2>
+<form id="add_movie" method="get" action="#">
+    <label for="movieTitle">Movie Title:</label>
+    <input type="text" name="movieTitle" id="movieTitle">
+    <br>
+    <label for="movieYear">Movie Year:</label>
+    <input type="text" name="movieYear" id="movieYear">
+    <br>
+    <label for="movieDirector">Movie Director:</label>
+    <input type="text" name="movieDirector" id="movieDirector">
+    <br>
+    <label for="sName">Star Name:</label>
+    <input type="text" name="sName" id="sName">
+    <br>
+    <label for="genreName">Genre Name:</label>
+    <input type="text" name="genreName" id="genreName">
+    <br>
+    <button type="submit">Submit</button>
+</form>
+
+
+<h2>Database Metadata</h2>
+<table class="dbMetaTable">
+    <tr>
+        <th>Table Name</th>
+        <th>Attribute/Types</th>
+    </tr>
+    <tbody id="metadataBody"></tbody>
+</table>
+
+<!-- include jQuery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!-- include our own JS file -->
+<script src="./dashboard.js"></script>
+</body>
+</html>
